@@ -1,0 +1,154 @@
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px 10%;
+      text-align: center;
+      border-bottom: 2px solid #ff4c60;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #ff4c60;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ff4c60;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff8a9e;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 5px solid #ff4c60;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    /* About */
+    #about p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }/* Portfolio grid */
+    #portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .video-thumb {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff4c60aa;
+      transition: transform 0.3s ease;
+    }
+    .video-thumb:hover {
+      transform: scale(1.05);
+    }
+    .video-thumb video,
+    .video-thumb img {
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #ff4c60;
+    }
+    .video-thumb .title {
+      padding: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #ff4c60;
+      text-align: center;
+    }
+    /* Services */
+    #services ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #services li {
+      background: #222;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px #ff4c60aa;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    /* Contact */
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    #contact label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #ff4c60;
+    }
+    #contact input, #contact textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    #contact button {
+      background: #ff4c60;
+      border: none;
+      color: white;
+      padding: 12px;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+    #contact button:hover {
+      background: #ff7a8a;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+      }
+    }
